@@ -8,6 +8,7 @@ var first = true;
 
 function setup() {
 	createCanvas(320, 240);
+	background(0);
 }
 
 function draw() {
@@ -59,7 +60,7 @@ function draw() {
 
 				stroke(r, g, b);
 				fill(r, g, b);
-				
+
 				var d = height / (i * 6) + (rnd(5) * height/((i + 1) * 4));
 
 				ellipse(xm, ym, d/2, d/2);
@@ -67,8 +68,6 @@ function draw() {
 			}
 
 		}
-	} else {
-		//ellipse(mouseX, mouseY, 10, 10)
 	}
 }
 
